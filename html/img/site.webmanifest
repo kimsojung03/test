@@ -1,0 +1,19 @@
+{
+    "name": "MAKE COSMAECIT",
+    "short_name": "MAKE COSMAECIT",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#e2e2e2",
+    "background_color": "#e2e2e2",
+    "display": "standalone"
+}

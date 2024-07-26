@@ -1,0 +1,130 @@
+/* @import './_var.scss';
+main{
+    @include wrap;
+    a{
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: $mainColor;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    }
+}*/
+
+header{
+    .container{
+        .depth_01{
+            > li{
+                &:hover a{
+                    
+                }
+                > a{
+
+                }
+                .depth_02{
+                    li{
+                        a{
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+
+header{
+    background-color: #000;
+    position: relative;
+
+}
+.container{
+    .fake{
+        overflow: hidden;
+        height: 0;
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        transition: all 1s ease-in-out;
+        
+    }
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    h1{
+        a{
+            color: #fff;
+            display: block;
+            line-height: 50px;
+        }
+    }
+    nav{
+        &:hover + .fake{
+            height: 200px;
+        }
+        .depth_01{
+            display: flex;
+            
+
+    
+            &:hover .depth_02{
+                height: 200px;
+            }
+            > li{
+                position: relative;
+                &:hover > a{
+                    background-color: aquamarine;
+                }
+                > a {
+                    color: #fff;
+                    display: block;
+                    line-height: 50px;
+                    padding: 0 30px;
+
+                }
+                .depth_02{
+                    text-align: center;
+                    position: absolute;
+                    width: 100%;
+                    top: 100%;
+                    left: 0;
+                    overflow: hidden;
+                        height: 0;
+                    background-color: #000; 
+                    transition: all 1s ease-in-out;   
+                    z-index: 9;
+                    
+                    li{
+                        &:hover a{
+                            background-color: aquamarine;
+                        }
+                        a{
+                            color: #fff;
+                            display: block;
+                            line-height: 50px;
+
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+    }
+}

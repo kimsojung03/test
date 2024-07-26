@@ -1,0 +1,8 @@
+$mainColor : #1900ff;
+@mixin wrap{
+    font-size: 2em;
+    background-color: #ffffff;
+    color: $mainColor;
+    width: 600px;
+    margin: 0 auto;
+}
